@@ -1,5 +1,11 @@
+import java.util.*;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        CardsDeck deck = new CardsDeck();
+        ArrayList<Card> cards = deck.getCards();
+        for (Card card: cards) {
+            System.out.println(card.toString());
+        }
     }
 }
